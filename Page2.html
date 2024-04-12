@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page 2</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #0080FF;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .container {
+        text-align: center;
+    }
+    
+    .header-text1 {
+        margin-bottom: 10px;
+        font-size: 14px;
+        color: white;
+    }
+
+    .header-text2 {
+        margin-bottom: 50px;
+        font-size: 14px;
+        color: white;
+    }
+    
+    .sub-header-text {
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: #FFFF00;
+    }
+    
+    .country-code-picker {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+        max-width: 100%;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin-top: 20px;
+        margin-bottom: 30px; 
+    }
+    
+    .country-code-picker select {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        outline: none;
+        appearance: none;
+        cursor: pointer;
+
+    }
+
+    .phone-input {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+        max-width: 100%;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin-top: 20px;
+        margin-bottom: 30px; 
+       
+    }
+
+    .phone-input input {
+        width: calc(100% - 20px);
+        padding: 10px;
+        border: none;
+        outline: none;
+        font-size: 14px;
+        
+    }
+
+    button {
+            width: 50%;
+            padding: 10px;
+            margin: 10px 0;
+            margin-top: 20px;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 30px;
+            background-color: #FFFF00;
+            color: #000080;
+            font-size: 16px;
+            font-weight: bold; 
+            cursor: pointer;
+            text-align: center; /* Align text to the center */
+        }
+
+        button span {
+            display: block; /* Make the span element a block-level element */
+            font-size: 16px; /* Adjust font size as needed */
+            margin-top: 5px; /* Add space between button text and span */
+            font-weight: normal; 
+        }
+
+
+        button:hover {
+            background-color: #BFBF00;
+        }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header-text1">Sila masukkan nombor telefon anda untuk menerima notis tiket melalui SMS</div>
+    <div class="header-text2">Please enter your mobile number to receive ticket notification via SMS</div>
+    <div class="sub-header-text">Kod panggilan negara</div>
+    <div class="sub-header-text">Country code:</div>
+    <div class="country-code-picker">
+        <select id="country-code">
+            <option value="+60">Malaysia (+60)</option>
+            <option value="+44">Indonesia (+62)</option>
+            <option value="+91">Thailand (+66)</option>
+        </select>
+    </div>
+
+    <div class="sub-header-text">Nombor telefon</div>
+    <div class="sub-header-text">Mobile number:</div>
+
+    <div class="phone-input">
+        <input type="text" placeholder="Enter your phone number">
+        
+    </div>
+    <form>
+        <button type="button">Dapatkan Tiket<span>Get a Ticket</span></button>
+    
+    </form>
+  
+</div>
+
+</body>
+</html>
